@@ -18,6 +18,10 @@ describe LeapYears do
   end
 
   it 'returns leap years between start and end date' do
-    expect(subject.leap_year_array(2000, 2012)).to contain_exactly(2004, 2008)
+    expect(subject.find_all_leap_years(2000, 2012)).to contain_exactly(2004, 2008)
+  end
+
+  it 'when given a year returns the closest year' do
+    expect(subject.closest_year(2011)).to be(2012)
   end
 end

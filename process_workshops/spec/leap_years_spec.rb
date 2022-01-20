@@ -16,4 +16,8 @@ describe LeapYears do
   it 'returns false if not divisible by 4' do
     expect(subject.leap_year?(2009)).to be(false)
   end
+
+  it 'returns leap years between start and end date' do
+    expect(subject.leap_year_array(2000, 2012)).to contain_exactly(2004, 2008)
+  end
 end

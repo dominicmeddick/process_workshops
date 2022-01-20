@@ -11,5 +11,20 @@ class LeapYears
       return false
     end
   end
-  
+
+  def leap_year_array(start_date, end_date)
+    is_leap_year = []
+    loop do
+      start_date = start_date + 1
+      if leap_year?(start_date) == true
+        is_leap_year << start_date
+      end
+      if start_date == end_date - 1
+        break 
+      end
+    end
+      return is_leap_year
+  end
+
+
 end

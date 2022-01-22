@@ -24,3 +24,17 @@ Write a program that takes a start year and an end year and returns an array of 
 ```
 Write a program that when given a year, will return the closest leap year (this could be before or after the given year)
 ```
+
+## Middle Letter
+
+```
+Your job is to return the middle letter of a word. If the word's length is odd, return the middle letter. If the word's length is even, return the middle 2 letters.
+```
+```
+Acceptance Criteria
+get_middle("test") # => "es"
+get_middle("testing") # => "t"
+get_middle("middle") # => "dd"
+get_middle("A") # => "A"
+get_middle("of") # => "of"
+```
